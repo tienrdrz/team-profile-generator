@@ -33,7 +33,7 @@ test('creates an Intern with a name, id, email, role, and their school', () => {
   test('gets an Interns role', () => {
     const intern = new Intern('Intern');
 
-    expect(intern.getRole()).toEqual(expect.any(String)); 
+    expect(intern.getRole()).toEqual('Intern'); 
   });
 
   test('gets an Interns school', () => {

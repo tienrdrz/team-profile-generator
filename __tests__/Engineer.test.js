@@ -32,7 +32,7 @@ test('creates an Engineer with a name, id, email, role, and github username', ()
   test('gets an engineers role', () => {
     const engineer = new Engineer('Engineer');
 
-    expect(engineer.getRole()).toEqual(expect.any(String)); 
+    expect(engineer.getRole()).toEqual('Engineer'); 
   });
 
   test('gets an engineers github', () => {
