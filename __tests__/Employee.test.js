@@ -2,10 +2,10 @@
 const Employee = require('../lib/Employee.js');
 
 test('creates an Employee with a name, id, email, and role', () => {
-    const employee = new Employee('Fred', 123456, 'apple@pear.com', 'Employee');
+    const employee = new Employee('Fred', '123456', 'apple@pear.com', 'Employee');
 
     expect(employee.name).toBe('Fred');
-    expect(employee.id).toEqual(expect.any(Number));
+    expect(employee.id).toEqual(expect.any(String));
     expect(employee.email).toEqual(expect.any(String));
     expect(employee.role).toEqual(expect.any(String));
   });
