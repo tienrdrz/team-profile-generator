@@ -17,10 +17,10 @@ In order to generate a profile for your team, answer questions in the command li
 
 ## License
 
-[![License](https://img.shields.io/badge/License-Javascript-blue.svg)](https://opensource.org/licenses/Javascript)
-[![License](https://img.shields.io/badge/License-Node-js-blue.svg)](https://opensource.org/licenses/Node-js)
-[![License](https://img.shields.io/badge/License-Jest-blue.svg)](https://opensource.org/licenses/Jest)
-[![License](https://img.shields.io/badge/License-Inquirer-blue.svg)](https://opensource.org/licenses/Inquirer)
+[![License](https://img.shields.io/badge/License-Javascript-orange.svg)](https://opensource.org/licenses/Javascript)
+[![License](https://img.shields.io/badge/License-Node_js-blue.svg)](https://opensource.org/licenses/Node_js)
+[![License](https://img.shields.io/badge/License-Jest-green.svg)](https://opensource.org/licenses/Jest)
+[![License](https://img.shields.io/badge/License-Inquirer-red.svg)](https://opensource.org/licenses/Inquirer)
 
 ## Examples
 
