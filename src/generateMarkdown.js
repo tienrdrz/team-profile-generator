@@ -1,4 +1,4 @@
-function generateMarkdown(data) {
+function generateMarkdownEngineer(data) {
     return `
     
     <!DOCTYPE html>
@@ -43,4 +43,4 @@ function generateMarkdown(data) {
 }
 
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdownEngineer;
