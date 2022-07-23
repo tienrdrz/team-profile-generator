@@ -8,6 +8,7 @@ function generateMarkdown(data) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Team Profile</title>
     </head>
     <body>
@@ -16,7 +17,7 @@ function generateMarkdown(data) {
         <article class="team">
             <div class="employees">
                 <h1>${data.name}</h1>
-                <h2>${data.role}</h2>
+                <h2><span class="material-icons md-36">face</span>${data.role}</h2>
                 <div class="employee-info">
                     <table>
                         <tr>
@@ -25,7 +26,7 @@ function generateMarkdown(data) {
                         </tr>
                         <tr>
                             <td>Email:</td>
-                            <td>${data.email}</td>
+                            <td><a href="${data.email}">${data.email}</a></td>
                         </tr>
                         <tr>
                             <td>Office Number:</td>
@@ -35,8 +36,6 @@ function generateMarkdown(data) {
                 </div>
             </div>
         </article>
-    </body>
-    </html>
     
     `
 }

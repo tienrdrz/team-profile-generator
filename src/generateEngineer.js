@@ -3,7 +3,7 @@ function generateEngineer(data) {
         <article class="team">
             <div class="employees">
                 <h1>${data.name}</h1>
-                <h2>${data.role}</h2>
+                <h2><span class="material-icons md-36">engineering</span>${data.role}</h2>
                 <div class="employee-info">
                     <table>
                         <tr>
@@ -12,13 +12,16 @@ function generateEngineer(data) {
                         </tr>
                         <tr>
                             <td>Email:</td>
-                            <td>${data.email}</td>
+                            <td><a href="${data.email}">${data.email}</a></td>
                         </tr>
                         <tr>
                             <td>Github:</td>
                             <td><a href='https://github.com/${data.github}'>${data.github}</a></td>
                         </tr>
                     </table>
+                </div>
+            </div>
+        </article>
     
     `
 }

@@ -7,6 +7,9 @@ const generateMarkdown = require('./src/generateMarkdown.js');
 const generateEngineer = require('./src/generateEngineer.js');
 const generateIntern = require('./src/generateIntern.js');
 
+// file to close out the html
+const generateEnd = require('./src/generateEnd.js');
+
 //importing all the files that are needed to get the data
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
@@ -238,6 +241,7 @@ const promptUserNew = () => {
             promptUserIntern();
         } else {
             console.log("Your team has been created. All done!")
+            appendFinalFile();
         }
       });
   
@@ -275,6 +279,20 @@ const appendNewFiles = fileContent => {
     });
 };
 
+const appendFinalFile = function () {
+    return new Promise ((resolve, reject) => {
+        fs.appendFile('./dist/index.html', generateEnd(), err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve ({
+                ok: true,
+                message: 'Content has been added.'
+            });
+        });
+    });
+};
 
 promptUserManager();
 
