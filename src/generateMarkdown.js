@@ -16,7 +16,7 @@ function generateMarkdown(data) {
         <article class="team">
             <div class="employees">
                 <h1>${data.name}</h1>
-                <h2>Team Manager</h2>
+                <h2>${data.role}</h2>
                 <div class="employee-info">
                     <table>
                         <tr>
@@ -29,9 +29,8 @@ function generateMarkdown(data) {
                         </tr>
                         <tr>
                             <td>Office Number:</td>
-                            <td><a href='https://github.com/${data.office}'>${data.github}</a></td>
+                            <td>${data.officeNumber}</td>
                         </tr>
-                        
                     </table>
                 </div>
             </div>

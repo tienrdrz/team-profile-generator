@@ -3,7 +3,7 @@ function generateIntern(data) {
         <article class="team">
             <div class="employees">
                 <h1>${data.name}</h1>
-                <h2>Intern</h2>
+                <h2>${data.role}</h2>
                 <div class="employee-info">
                     <table>
                         <tr>
@@ -16,7 +16,7 @@ function generateIntern(data) {
                         </tr>
                         <tr>
                             <td>University:</td>
-                            <td><a href='https://github.com/${data.school}'>${data.github}</a></td>
+                            <td>${data.school}</td>
                         </tr>
                         
                     </table>

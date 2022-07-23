@@ -3,7 +3,7 @@ function generateEngineer(data) {
         <article class="team">
             <div class="employees">
                 <h1>${data.name}</h1>
-                <h2>Engineer</h2>
+                <h2>${data.role}</h2>
                 <div class="employee-info">
                     <table>
                         <tr>
