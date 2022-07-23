@@ -1,4 +1,4 @@
-function generateMarkdownEngineer(data) {
+function generateMarkdown(data) {
     return `
     
     <!DOCTYPE html>
@@ -16,7 +16,7 @@ function generateMarkdownEngineer(data) {
         <article class="team">
             <div class="employees">
                 <h1>${data.name}</h1>
-                <h2>${data.role}</h2>
+                <h2>Team Manager</h2>
                 <div class="employee-info">
                     <table>
                         <tr>
@@ -28,8 +28,8 @@ function generateMarkdownEngineer(data) {
                             <td>${data.email}</td>
                         </tr>
                         <tr>
-                            <td>Github:</td>
-                            <td><a href='https://github.com/${data.github}'>${data.github}</a></td>
+                            <td>Office Number:</td>
+                            <td><a href='https://github.com/${data.office}'>${data.github}</a></td>
                         </tr>
                         
                     </table>
@@ -43,4 +43,4 @@ function generateMarkdownEngineer(data) {
 }
 
 
-module.exports = generateMarkdownEngineer;
+module.exports = generateMarkdown;

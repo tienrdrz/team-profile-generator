@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 //importing the files needed to generate the page
-const generateMarkdownEngineer = require('./src/generateMarkdownEngineer.js');
+const generateMarkdown = require('./src/generateMarkdown.js');
 
 //importing all the files that are needed to get the data
 const Engineer = require('./lib/Engineer');
@@ -63,7 +63,7 @@ const promptUserManager = () => {
            }
        },
     ])
-   
+
    };
    
 // here are the questions asked if the new employee added is an engineer
@@ -167,9 +167,9 @@ promptUserManager()
 // .then(pageHTML => {
 // promptUserNew();
 // })
-// .then(nameInput => {
-//     return generateMarkdown(nameInput)
-// })
-// .then(pageHTML => {
-//     return writeToFile(pageHTML)
-// })
+.then(nameInput => {
+    return generateMarkdown(nameInput)
+})
+.then(pageHTML => {
+    return writeToFile(pageHTML)
+})
