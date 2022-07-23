@@ -143,7 +143,7 @@ const promptUserEngineer = () => {
     return generateEngineer(newEngineer);
 })
 .then (employeeData => {
-    return writeToFile(employeeData);
+    return appendNewFiles(employeeData);
 })
 .then(pageContent => {
     promptUserNew();
@@ -212,7 +212,7 @@ const promptUserIntern = () => {
        return generateIntern(newIntern);
    })
    .then (employeeData => {
-       return writeToFile(employeeData);
+       return appendNewFiles(employeeData);
    })
    .then(pageContent => {
        promptUserNew();
@@ -257,7 +257,24 @@ const writeToFile = fileContent => {
             });
         });
     });
-}
+};
+
+// instead of overwritting the file, using append to add to the existing one
+const appendNewFiles = fileContent => {
+    return new Promise ((resolve, reject) => {
+        fs.appendFile('./dist/index.html', fileContent, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve ({
+                ok: true,
+                message: 'Content has been added.'
+            });
+        });
+    });
+};
+
 
 promptUserManager();
 
