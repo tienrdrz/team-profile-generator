@@ -24,7 +24,7 @@ In order to generate a profile for your team, answer questions in the command li
 
 ## Examples
 
-![image](https://user-images.githubusercontent.com/100370557/179791889-287cc150-287a-4b37-a379-d2475bba4745.png)
+![image](https://user-images.githubusercontent.com/100370557/180629665-7ad2efc5-2d4b-4fce-92e6-f0ff42782b94.png)
 
 Link to Video
 
