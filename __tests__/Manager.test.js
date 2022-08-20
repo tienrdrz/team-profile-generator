@@ -9,7 +9,7 @@ test('creates an Manager with a name, id, email, role, and their office number',
     expect(manager.id).toEqual(expect.any(String));
     expect(manager.email).toEqual(expect.any(String));
     expect(manager.role).toEqual(expect.any(String));
-    expect(manager.officeNumber).toEqual(expect.any(String));
+    expect(manager.officeNumber).toEqual(expect.any(Number));
   });
 
   test('gets an Managers name', () => {
@@ -33,11 +33,11 @@ test('creates an Manager with a name, id, email, role, and their office number',
   test('gets an Managers role', () => {
     const manager = new Manager('Manager');
 
-    expect(manager.getRole()).toEqual('Manager'); 
+    expect(manager.getRole()).toEqual(expect.any(String)); 
   });
 
   test('gets an Managers office number', () => {
-    const manager = new Manager('12345678');
+    const manager = new Manager('123456');
 
-    expect(manager.getofficeNumber()).toEqual(expect.any(String));
+    expect(manager.getOfficeNumber()).toEqua;(expect.any(String));
   })
