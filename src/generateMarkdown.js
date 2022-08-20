@@ -26,7 +26,7 @@ function generateMarkdown(data) {
                         </tr>
                         <tr>
                             <td>Email:</td>
-                            <td><a href="${data.email}">${data.email}</a></td>
+                            <td><a href="mailto:${data.email}">${data.email}</a></td>
                         </tr>
                         <tr>
                             <td>Office Number:</td>

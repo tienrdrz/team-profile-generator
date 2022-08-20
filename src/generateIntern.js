@@ -12,7 +12,7 @@ function generateIntern(data) {
                         </tr>
                         <tr>
                             <td>Email:</td>
-                            <td><a href="${data.email}">${data.email}</a></td>
+                            <td><a href="mailto:${data.email}">${data.email}</a></td>
                         </tr>
                         <tr>
                             <td>University:</td>
