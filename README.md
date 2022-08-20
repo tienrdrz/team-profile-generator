@@ -28,6 +28,6 @@ In order to generate a profile for your team, answer questions in the command li
 
 Link to Video
 
-https://drive.google.com/file/d/1clZRq1ex25bDEqYpgZk93zq9wsHTdccf/view
+https://drive.google.com/file/d/1MA1YxgIyhy_kArVPSnsctQ-I1O_5c9TE/view
 
 
